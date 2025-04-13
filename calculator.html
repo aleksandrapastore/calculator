@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>aleksandrapastore.calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Aleksandra's Calculator</h1>
+        <div class="mainbody">
+        <div class="display" input type="text" id="display"></div>
+        <div class="row">
+            <button class="button" onclick="displayValue()"> AC </button>
+            <button class="button" onclick="displayValue()"> DE </button> 
+            <button class="button" onclick="displayValue()"> . </button> 
+            <button class="button" onclick="displayValue()"> / </button> 
+        </div>
+        <div class="row">
+            <button class="button" onclick="displayValue()"> 7 </button>
+            <button class="button" onclick="displayValue()"> 8 </button> 
+            <button class="button" onclick="displayValue()"> 9 </button> 
+            <button class="button" onclick="displayValue()"> * </button> 
+        </div>
+        <div class="row">
+            <button class="button" onclick="displayValue()"> 4 </button>
+            <button class="button" onclick="displayValue()"> 5 </button> 
+            <button class="button" onclick="displayValue()"> 6 </button> 
+            <button class="button" onclick="displayValue()"> - </button> 
+        </div>
+        <div class="row">
+            <button class="button" id="button" onclick="displayValue()"> 1 </button>
+            <button class="button" onclick="displayValue()"> 2 </button> 
+            <button class="button" onclick="displayValue()"> 3 </button> 
+            <button class="button" onclick="displayValue()"> + </button> 
+        </div>
+        <div class="row">
+            <button class="button" onclick="displayValue()"> 00 </button> 
+            <button class="button" onclick="displayValue()"> 0 </button> 
+            <button class="button_double" onclick="displayValue()"> = </button> 
+        </div>
+        </div>
+        <script>
+            function displayValue () {
+                document.getElementsById("display").value = document.getElementsById("button").value;
+            }
+        </script>
+    </body>
+</html>
