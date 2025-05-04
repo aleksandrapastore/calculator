@@ -1,10 +1,10 @@
 body{
     background-color:#F4EEFF;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 h{text-align: center;}
@@ -17,6 +17,7 @@ h{text-align: center;}
     margin: 20px;
     padding: 20px;
     text-align: center;
+    height:50%;
     width: 50%;
   } 
 .row {
@@ -75,7 +76,23 @@ h{text-align: center;}
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 15px;
   }
-  .display::placeholder {
+.display::placeholder {
     color: black;
     opacity: 1;
   }
+.toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
