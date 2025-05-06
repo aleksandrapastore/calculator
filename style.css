@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color:#F4EEFF;
     display: flex;
@@ -18,7 +22,8 @@ h{text-align: center;}
     padding: 20px;
     text-align: center;
     height:50%;
-    width: 50%;
+    width: 90%;
+    max-width: 400px;
   } 
 .row {
     border-radius: 10px;
@@ -27,6 +32,9 @@ h{text-align: center;}
     border: 2px solid black;
     margin: 20px;
     padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   } 
 .button {
     border-radius: 25px;
@@ -72,7 +80,8 @@ h{text-align: center;}
     margin: 20px;
     padding: 20px;
     height: 20px;
-    width: 285px;
+    width: 100%;
+    box-sizing: border-box;
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 15px;
   }
@@ -95,4 +104,33 @@ h{text-align: center;}
 .dark-mode {
   background-color: #121212;
   color: white;
+}
+/* Adjust content for small screens (phone) by adding a breakpoint at 600 px */
+@media (max-width: 600px) {
+  .mainbody {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .display {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  .button,
+  .button_double {
+    width: 20vw;
+    font-size: 1em;
+  }
+
+  .button_double {
+    width: 42vw;
+  }
+
+  .toggle {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
