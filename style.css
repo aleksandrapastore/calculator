@@ -29,27 +29,22 @@ h{text-align: center;}
   margin: 20px;
   padding: 8px;
 } 
-.button {
+.button, .button_double {
   border-radius: 25px;
   background-color: #6A5ACD;
   color: black;
+  font-weight: bold;
   border: 2px solid black;
   margin: 1px;
   padding: 10px;
   text-align: center;
-  width: 60px;
   transition-duration: 0.4s;
 }
+.button{
+  width: 60px;
+}
 .button_double {
-  border-radius: 25px;
-  background-color: #6A5ACD;
-  color: black;
-  border: 2px solid black;
-  margin: 1px;
-  padding: 10px;
-  text-align: center;
   width: 120px;
-  transition-duration: 0.4s;
 }
 .button:hover {
   background-color: fuchsia;
@@ -93,9 +88,13 @@ h{text-align: center;}
   border-radius: 5px;
   font-size: 0.9rem;
 }
-.dark-mode {
+body.dark-mode {
 background-color: #121212;
 color: white;
+}
+body.dark-mode .button, body.dark-mode .button_double{
+  color: white;          /* Text color becomes white */
+  font-weight: bold;
 }
 
 /* Styles for mobile */
